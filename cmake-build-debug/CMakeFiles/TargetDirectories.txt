@@ -1,0 +1,3 @@
+/Users/tildozer/Desktop/C++Stuff/C++Notes/cmake-build-debug/CMakeFiles/C__Notes.dir
+/Users/tildozer/Desktop/C++Stuff/C++Notes/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tildozer/Desktop/C++Stuff/C++Notes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
