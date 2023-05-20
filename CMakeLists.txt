@@ -3,4 +3,4 @@ project(C__Notes)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(C__Notes main.cpp math_module.h)
+add_executable(C__Notes main.cpp math_module.h console_output.h)

@@ -51,5 +51,6 @@ namespace mathModules {
         constants();
         mathematicalExpression(5, 6);
         expressionToCode(60, 4);
+        return 0;
     }
 }
