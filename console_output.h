@@ -1,4 +1,6 @@
 #include <iostream>
+// was used to manipulate Celsius to a fixed point double.
+#include <iomanip>
 
 using namespace std;
 
@@ -26,11 +28,23 @@ double findTaxOwed(double sales) {
 }
 
 int cinLesson() {
-    cout << "enter a value: ";
-    int value;
-    cin >> value;
-    cout << value;
+    cout << "enter values for x and y: ";
+    int x;
+    int y;
+    cin >> x >> y;
+    cout << x + y << endl;
     return 0;
+}
+
+double convertToCelsius() {
+    cout << "enter a temperature in fahrenheit to have it converted to celsius: ";
+    double fahrenheit;
+    cin >> fahrenheit;
+    double celsius = (fahrenheit - 32) * 1.8;
+//   <iomanip> made this possible.
+    cout << setprecision(1) << fixed;
+    cout << celsius << endl;
+    return celsius;
 }
 
 
@@ -41,6 +55,7 @@ namespace demoOutput {
         output(2, 5);
         findTaxOwed(95000);
         cinLesson();
+        convertToCelsius();
         return 0;
     }
 }
