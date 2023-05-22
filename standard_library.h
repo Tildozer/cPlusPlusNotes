@@ -31,6 +31,8 @@ double findAreaOfCircle() {
 //  find the most common used libraries and prioritize them.
 //  will find more samples to add here.
 
+
+// namespace to export all of these functions to the main app page
 namespace cmathNotes {
     int showCmathDemos() {
         cmathDemo();

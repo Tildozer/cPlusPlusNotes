@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -45,12 +47,61 @@ double expressionToCode(double x, int y) {
     return z;
 }
 
+// ______________________ working with numbers ______________________
+
+int colorExample() {
+//    0b lets the system know you are writing your number in binary
+    int binaryNumber = 0b11111111;
+    cout << binaryNumber << endl;
+    int hexiDecimalNumber = 0xFF;
+    cout << hexiDecimalNumber << endl;
+    return 0;
+}
+
+int narrowing() {
+//  {} works the same as =
+//  this is acceptable but can't be done the other way.
+    short number {100};
+    int another {number};
+    cout << another << endl;
+    return 0;
+}
+
+int generateRandomNumber() {
+//    ctime
+    long elapsedSeconds {time(nullptr)};
+//    cstdlib
+    srand(elapsedSeconds);
+//    cstlib
+    int number = rand() % 10;
+    cout << number << endl;
+    return 0;
+}
+
+int rollDice() {
+    const short minValue = 1;
+    const short maxValue = 6;
+    srand(time(nullptr));
+    short first = rand() % (maxValue - minValue + 1) + minValue;
+    short second = rand() % (maxValue - minValue + 1) + minValue;
+    cout << first << " " << second << endl;
+    return 0;
+}
+
+// namespace to export all of these functions to the main app page
 namespace mathModules {
     int doMath() {
         swap(3, 6);
         constants();
         mathematicalExpression(5, 6);
         expressionToCode(60, 4);
+        return 0;
+    }
+
+    int moreMath() {
+        colorExample();
+        generateRandomNumber();
+        rollDice();
         return 0;
     }
 }

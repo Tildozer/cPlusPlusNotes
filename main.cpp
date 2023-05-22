@@ -5,6 +5,7 @@
 #include "data_types.h"
 
 using namespace std;
+using namespace mathModules;
 
 int main() {
     int file_size = 0;
@@ -12,9 +13,10 @@ int main() {
 // if number has decimals use double
     double sales = 9.99;
     cout << "File size " << file_size << " sales " << sales << " counter " << counter << endl;
-    mathModules::doMath();
+    doMath();
     demoOutput::showOutput();
     cmathNotes::showCmathDemos();
     typeDemonstrations::showTypes();
+    moreMath();
     return 0;
 }

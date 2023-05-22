@@ -36,9 +36,23 @@ int typeExamples() {
     return 0;
 }
 
+int curlyInitializer() {
+//    curly brackets after initialization will help detect errors and automatically set undefined variable to zero
+    int zero{};
+    cout << zero << endl;
+//    if it's not a number it is just an empty string
+    string test{};
+    cout << "te" << test << "st" << endl;
+
+    return 0;
+}
+
+
+// namespace to export all of these functions to the main app page
 namespace typeDemonstrations {
-    int showTypes () {
+    int showTypes() {
         typeExamples();
+        curlyInitializer();
         return 0;
     }
 }

@@ -47,7 +47,7 @@ double convertToCelsius() {
     return celsius;
 }
 
-
+// namespace to export all of these functions to the main app page
 namespace demoOutput {
 
     int showOutput() {
