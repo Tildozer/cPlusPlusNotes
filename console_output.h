@@ -40,7 +40,7 @@ double convertToCelsius() {
     cout << "enter a temperature in fahrenheit to have it converted to celsius: ";
     double fahrenheit;
     cin >> fahrenheit;
-    double celsius = (fahrenheit - 32) * 1.8;
+    double celsius = (fahrenheit - 32) * (5.0 / 9);
 //   <iomanip> made this possible.
     cout << setprecision(1) << fixed;
     cout << celsius << endl;
