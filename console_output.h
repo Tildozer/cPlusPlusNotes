@@ -1,4 +1,5 @@
 #include <iostream>
+
 // was used to manipulate Celsius to a fixed point double.
 #include <iomanip>
 

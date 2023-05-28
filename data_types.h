@@ -7,16 +7,18 @@ using namespace std;
  __________  __________  __________
   short     |    2     | -32,768 to 32,767 //use shorts to save memory
   int       |    4     | -2 billion to 2 billion
+  unsigned  |    4     | 0 to 4,294,967,295
   long      |    4     | Same as int.
-  long long |    8     | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
   float     |    4     | -3.4E38 to 3.4E38
+  long long |    8     | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
   double    |    8     | -1.7E308 to 1.7E308
  long double|    8     | -3.4E932 to 1.7E4832
  ----------------------------------
    bool     |    1     | true/false
    char     |    1     | Stores a single character
 */
-
+// to make long literal more readable for you can use a single quote as a digit separator.
+// ex 3'560'345 == 3,560,345
 int typeExamples() {
     double price = 99.99;
 //    always add the F after a float, can be lowercase as well.
@@ -43,7 +45,8 @@ int curlyInitializer() {
 //    if it's not a number it is just an empty string
     string test{};
     cout << "te" << test << "st" << endl;
-
+    string curly {"this is a curly initialization"};
+    cout << curly << endl;
     return 0;
 }
 
@@ -56,3 +59,4 @@ namespace typeDemonstrations {
         return 0;
     }
 }
+
